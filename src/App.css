@@ -1,3 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600;1,700&family=Prompt:wght@100;200;400;500&family=Readex+Pro&family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  color: white;
+  background-color: black;
+  font-family: "Lora", serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+.poster {
+  width: 13em;
+  height: 17em;
+  border: 2px solid royalblue;
+  box-shadow: 1px 1px 3px 3px white;
+}
+
+#card {
+  border: 2px solid royalblue;
+  margin: 1em 40em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#info {
+  margin: 5em 0em;
+  text-align: left;
+}
+#header {
+  margin: 2em 10em;
+  padding: 0.8em 4em;
+  font-weight: bold;
+  box-shadow: 1px 1px 6px 6px white;
+}
+#title {
+  color: yellow;
+}
+#heading {
+  color: white;
+  font-size: 1.8em;
+  margin: 1em 2em;
+  text-align: center;
+}
+#tag {
+  font-weight: lighter;
+  color: orange;
+  text-align: center;
+}
+#amount {
+  color: green;
+}
+#container1 {
+  border: 2px solid white;
+  margin: 2em 2em;
+  padding: 0 3.5em;
+  border-radius: 10em;
+}
+
+#containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
