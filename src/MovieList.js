@@ -1,9 +1,8 @@
 import titanic from "./media/titanic.jpg";
 import avatar from "./media/avatar.jpg";
 import starwars from "./media/starwars.jpg";
-import avengerinfinitywar from "./media/avengerinfinitywar.jpg"
+import avengerinfinitywar from "./media/avengerinfinitywar.jpg";
 import jurassicworld from "./media/jurrasicworld.jpg";
-
 
 const data = [
   {
@@ -61,7 +60,7 @@ const data = [
     year: 2015,
     amount: "$1,671,713,208",
     img: {
-      src:jurassicworld,
+      src: jurassicworld,
       alt: "jurassic_world",
     },
     ranking: 5,

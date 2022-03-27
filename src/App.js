@@ -1,42 +1,53 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import data from "./data";
+
+import MovieList from "./MovieList";
+import SearchBox from "./components/SearchBox";
 
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       
-      <div id="header">
+     <div className="nav">
+      <div className="header">
+      <h1 className="heading">TOP MOVIES</h1>
+      <h4 className="tag">Best Movies Collections for your Weekend</h4>
+      </div>
+      <div className="search">
 
-      <h1 id="heading">TOP MOVIES</h1>
-      <h4 id="tag">Best Movies Collections for your Weekend</h4>
+    <SearchBox/>
       </div>
      
+       </div> 
       
 
-      {data.map((item) => {
+      <div className="card-container">
+        
+      {MovieList.map((item) => {
         return (
-          <div id="card">
-          <div id="containers">
-            <div id="container1">
-            <h2>#{item.ranking} -<span id="title">{item.title}</span>  ({item.year})</h2>
+          <div className="card">
+          <div className="containers">
+            <div className="container1">
+            <h2>#{item.ranking} -<span className="title">{item.title}</span>  ({item.year})</h2>
             </div>
             <img className="poster" src={item.img.src} alt={item.img.alt} />
             </div>
-            <ul id="info">
+            <ul className="info">
             <li>Distributor : {item.distributor}</li>
-            <li>Box Office Collection : <span id="amount">{item.amount}</span></li>
+            <li>Box Office Collection : <span className="amount">{item.amount}</span></li>
 
             </ul>
 
           </div>
           
-        );
-      })}
+          );
+        })}
+      
+      </div>
+    
     </div>
+
   );
 }
 
