@@ -1,15 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600;1,700&family=Prompt:wght@100;200;400;500&family=Readex+Pro&family=Roboto:wght@100;400;500;700&display=swap");
 
 * {
-  color: white;
-  background-color: #141414;
   font-family: "Lora", serif;
   font-family: "Prompt", sans-serif;
   font-family: "Readex Pro", sans-serif;
   font-family: "Roboto", sans-serif;
-  font-size: small;
+  font-size: 1em;
   margin: 1em;
   padding: 3px solid;
+  
+  
+}
+.theme-button{
+  border-radius: 10em;
+  background-color: darkblue;
+  color: white;
+  
+  
+}
+.log-button{
+  color: white;
+  background-color: blue;
+  border-radius: 2em;
 }
 
 input {
@@ -20,23 +32,43 @@ input {
   text-align: center;
   outline: 0;
 }
+
 input:hover {
   box-shadow: 1px 1px 3px 3px white;
 }
-.search {
-  color: royalblue;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 0;
+.username{
+  color: white;
+  border-radius: 2em;
+  margin:1.2 0;
+  background-color: darkblue;
 }
+
+.search {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin:1em 0;
+  border-radius: 2em;
+  background-color: darkblue;
+}
+.login{
+  background-color: dodgerblue;
+  margin: 0 5em;
+  padding: 5em;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
 .nav {
   display: grid;
-  grid-template-columns: 10fr 1fr;
-  color: white;
+  grid-template-columns: 1fr 6fr 1fr;
+  
 }
 .card-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(55, 1fr);
   gap: 1.5rem;
 }
 .poster {
@@ -48,6 +80,8 @@ input:hover {
 
 .card {
   border: 2px solid royalblue;
+  background-color:darkblue;
+  color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -57,7 +91,7 @@ input:hover {
   min-height: fit-content;
   min-width: fit-content;
   height: auto;
-  width: auto;
+  width: fit-content;
 }
 .info {
   margin: 1em 0em;
@@ -65,26 +99,43 @@ input:hover {
   list-style: circle;
 }
 .header {
-  margin: 2em 10em;
+  margin: 2em 2em;
   padding: 0.8em 4em;
   font-weight: bold;
   box-shadow: 1px 1px 6px 6px whitesmoke;
   border: 2px solid royalblue;
   border-radius: 2em;
+  background-color: darkblue;
+
+}
+.login-header {
+  margin:0 2em;
+  padding: 0.8em 4em;
+  font-weight: bold;
+  box-shadow: 1px 1px 6px 6px whitesmoke;
+  border: 2px solid royalblue;
+  border-radius: 2em;
+  background-color: darkblue;
+  margin-bottom: 10em;
+
 }
 
 .title {
   color: yellow;
 }
 .heading {
-  color: white;
+  color:white;
   font-size: 1.8em;
   margin: 1em 2em;
   text-align: center;
+  letter-spacing: 0.2em;
+  font-weight:bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tag {
   font-weight: lighter;
-  color: orange;
+  color: yellow;
+  letter-spacing: 0.25em;
   text-align: center;
 }
 .amount {
@@ -105,9 +156,15 @@ input:hover {
   min-height: fit-content;
   min-width: fit-content;
 }
+.container{
+  width: 100%
+}
+
 
 .App {
+  
   text-align: center;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
