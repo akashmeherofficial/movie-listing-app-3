@@ -691,12 +691,27 @@ font-size: 1.2em;
   iframe{
     width: auto;
   }
-  .container-lp{
-  
-  }
+
   .left-lp{
     padding: 2em;
   }
+}
+@media (max-width:1300px) {
+  html,body{
+    width: auto;
+    overflow-x: hidden;
+  
+  }
+  iframe{
+    width: auto;
+  }
+  .s-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
+    }
+
 }
 
 
