@@ -131,6 +131,7 @@ input:hover {
 }
 .c-right input{
   background-color: white;
+  border: 4px;
 }
 
 .c-main-container{
@@ -229,13 +230,14 @@ iframe{
   background-color: 2C5364;
 }
 .login{
-  background-color: dodgerblue;
-  margin: 0em 5em;
-  padding: 2.5em;
+ background-image: linear-gradient(to right bottom, #0F2027,#203A43,#2C5364,#203A43,#0F2027);
+  margin: 0em ;
+  padding: 0;
   text-align: center;
   color: white;
   letter-spacing: 0.2em;
   font-size: 1.5em;
+  height: 100vh;
   
 }
 .mode-div{
@@ -446,15 +448,27 @@ button:hover{
 
 }
 .login-header {
-  margin:0 2em;
+  
+  padding:2em ;
+ margin:  0 0 2em 0;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 6fr 1fr; */
+  background-image: linear-gradient(to top right,black,#141414,#0F2027,#203A43 );
+
   padding: auto;
   font-weight: bold;
-  box-shadow: 1px 1px 6px 6px whitesmoke;
-  border: 2px solid royalblue;
-  border-radius: 2em;
-  background-color: darkblue;
-  margin-bottom: 4em;
-
+  box-shadow: 1px 1px 6px 6px #203A43;
+  border: 2px solid #2C5364;
+}
+.login-header h1{
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login-header h1:hover{
+  color: #f8b500;
+  letter-spacing: 0.2em;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .title {
