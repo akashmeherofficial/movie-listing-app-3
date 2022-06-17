@@ -232,13 +232,16 @@ iframe{
 .login{
  background-image: linear-gradient(to right bottom, #0F2027,#203A43,#2C5364,#203A43,#0F2027);
   margin: 0em ;
-  padding: 0;
+  padding: 0 0 4em 0 ;
   text-align: center;
   color: white;
   letter-spacing: 0.2em;
   font-size: 1.5em;
-  height: 100vh;
+  height: 100%;
   
+}
+.login-btn{
+  margin: 0;
 }
 .mode-div{
   margin: 0;
@@ -587,6 +590,7 @@ button:hover{
 }
 .footer ul li a:hover{
 color: #f8b500;
+transition: 1s;
 }
 .footer-link h3{
  color: #2C5364;

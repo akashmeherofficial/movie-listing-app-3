@@ -10,7 +10,7 @@ const Footer = () => {
       <h1 className="footer-heading">BINGE H'IT</h1>
       <p>Copyright © 2020 BingeHit Inc.</p>
       <div className="footer-link">
-        <h3>Reach Us</h3>
+        <h3>Follow Us</h3>
         <ul>
           <li>
             <a href="/">Instagram</a>

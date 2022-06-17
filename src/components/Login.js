@@ -18,7 +18,7 @@ function Login() {
       />
       <h1>Password</h1>
       <input type="password" />
-      <div>
+      <div className="login-btn">
         <button className="log-button" onClick={() => updateLogin(true)}>
           Log In
         </button>
