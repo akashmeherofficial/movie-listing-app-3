@@ -8,7 +8,9 @@ function Login() {
   return (
     <div className="login" style={{ backgroundColor: `${theme}` }}>
       <div className="login-header">
-        <h1>TOP MOVIES</h1>
+        <h1>BINGE HI'T</h1>
+
+        <h4 className="tag">Best Binge Buddy</h4>
       </div>
       <h1>Username</h1>
       <input

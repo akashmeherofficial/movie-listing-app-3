@@ -700,8 +700,12 @@ font-size: 1.2em;
   html,body{
     width: auto;
     overflow-x: hidden;
-  
+    
   }
+ 
+
+
+  
   iframe{
     width: auto;
   }
