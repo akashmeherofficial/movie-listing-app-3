@@ -6,7 +6,7 @@ import { LoginContext } from "./context/LoginContext";
 export default function SearchBox(props) {
   const { updateLogin } = useContext(LoginContext);
   return (
-    <div className="col col-sm-4">
+    <div className="col col-sm-4 search-resp">
       {/* <p className="search">Search</p> */}
       {/* <p>{AccountCircleOutlined}</p> */}
       <button className="log-button logout" onClick={() => updateLogin(false)}>

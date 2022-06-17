@@ -15,6 +15,8 @@
 }
 html{
   margin: 0;
+  
+  
 }
 
 .theme-button{
@@ -160,8 +162,7 @@ iframe{
   margin: 3em;
   border-radius: 3em;
   border: 0.3em solid white;
-  height: 80vh;
-  /* padding: 3em; */
+
 }
 .contact h1:hover{
   letter-spacing: 0.2em;
@@ -255,7 +256,7 @@ iframe{
 }
 
 .nav {
-
+  max-width: ;
   padding:0 0.8em ;
  margin: 0;
   display: grid;
@@ -445,7 +446,7 @@ button:hover{
   padding: 0.8em 4em;
   font-weight: bold;
   box-shadow: 1px 1px 6px 6px #203A43;
- 
+ width: auto;
   border-radius: 2em;
   background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364,#203A43,#0F2027);
 
@@ -601,35 +602,70 @@ transition: 1s;
 .App {
   margin: 0;
   text-align: center;
-
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (max-width:1340px) {
+  html,body{
+    width: auto;
+    overflow-x: hidden;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .nav{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .navigation ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .heading{
+font-size: 1.2em;
+  }
+  .c-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .c-left{
+    width: auto;
+
+  }
+  .c-right{
+    margin-left: 17%;
+    width: auto;
+  }
+  .container-tp{
+    width: 100%;
+  }
+  .s-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.login{
+    font-size: 1.2em;
+    height: 100vh;
+}
+.login input{
+    font-size: 1.2em;
+}
+.login-header{
+  font-size: auto;
+}
+.search-resp{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

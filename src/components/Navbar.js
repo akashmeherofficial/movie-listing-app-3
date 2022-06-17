@@ -7,7 +7,7 @@ export default function Navbar() {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <div className="nav" style={{ backgroundColor: `${theme}` }}>
+      <nav className="nav" style={{ backgroundColor: `${theme}` }}>
         <Username />
         <div className="nav-main">
           <div className="header">
@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="search">
           <SearchBox />
         </div>
-      </div>
+      </nav>
     </>
   );
 }
