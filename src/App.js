@@ -8,16 +8,10 @@ import { ThemeContext } from "./components/context/ThemeContext";
 function App() {
   const [isLoggedIn, updateLogin] = useState(false);
   const [theme, setTheme] = useState("");
-  const [username, setUsername] = useState("lightyellow");
+  const [username, setUsername] = useState("");
 
   return (
     <div className="App">
-      <button className="theme-button" onClick={() => setTheme("burlywood")}>
-        Reading Mode
-      </button>
-      <button className="theme-button" onClick={() => setTheme("midnightblue")}>
-        Night Mode
-      </button>
       <LoginContext.Provider
         value={{ isLoggedIn, updateLogin, username, setUsername }}
       >
