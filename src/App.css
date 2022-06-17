@@ -610,6 +610,26 @@ transition: 1s;
   html,body{
     width: auto;
     overflow-x: hidden;
+    /* transform: scale(0.8); */
+  }
+  .c-right{
+    margin-left: 17%;
+    width: auto;
+  }
+  .s-main{
+    display: grid;
+    grid-template-columns: auto 2fr 2fr;
+    justify-content: center;
+  }
+
+  .items{
+
+  }
+}
+@media (max-width:900px) {
+  html,body{
+    width: auto;
+    overflow-x: hidden;
   }
 
   .nav{
