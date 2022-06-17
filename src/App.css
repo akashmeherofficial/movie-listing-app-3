@@ -622,9 +622,7 @@ transition: 1s;
     justify-content: center;
   }
 
-  .items{
-
-  }
+  
 }
 @media (max-width:900px) {
   html,body{
@@ -683,6 +681,22 @@ font-size: 1.2em;
   align-items: center;
 }
 
+}
+@media (max-width:600px) {
+  html,body{
+    width: auto;
+    overflow-x: hidden;
+  
+  }
+  iframe{
+    width: auto;
+  }
+  .container-lp{
+  
+  }
+  .left-lp{
+    padding: 2em;
+  }
 }
 
 
