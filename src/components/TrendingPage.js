@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "./components/Cards";
+import Cards from "./Cards";
 import map from "lodash/map";
 import range from "lodash/range";
 const TrendingPage = () => {

@@ -1,13 +1,13 @@
 import React from "react";
-import Cart from "../media/Cart.png";
 
-const Store = () => {
+const Services = () => {
   return (
     <div className="s-container">
       <h1>Services</h1>
 
       <div className="s-main">
         <div className="items">
+          <i class="uil uil-hourglass"></i>
           <h2>Rental Service</h2>{" "}
           <p>
             You don't have to purchase a movie when you can watch it in rent
@@ -15,6 +15,7 @@ const Store = () => {
           <button className="items-btn">Rent now</button>
         </div>
         <div className="items">
+          <i class="uil uil-calender"></i>
           <h2>Monthly Subscription</h2>
           <p>
             For binge watch of series, movies, biography, TV shows, It's the
@@ -23,21 +24,27 @@ const Store = () => {
           <button className="items-btn">Subscribe</button>
         </div>
         <div className="items cartitm">
-          <h2>Go to Store</h2>
+          <i class="uil uil-ticket"></i>
+          <h2>Book a movie</h2>
 
-          <img src={Cart} alt="cart" />
+          <p>
+            Want to Book a movie to watch on your nearest theatre.What are you
+            waiting for? Book Now!
+          </p>
 
           <button className="items-btn">Visit</button>
         </div>
         <div className="items">
-          <h2>Fan Club Store</h2>
+          <i class="uil uil-store"></i>
+          <h2>E-Store</h2>
           <p>
-            Fan of any cinema or webseries or any character? Contact us to get
-            T-shirt, Mugs, Pillow on the theme of your choice
+            Fan of any cinema or webseries or any character? Visit our to
+            purchase T-shirt, Mugs, Pillow on the theme of your choice
           </p>
           <button className="items-btn">Order Now</button>
         </div>
         <div className="items">
+          <i class="uil uil-users-alt"></i>
           <h2>Watch with a friend</h2>
           <p>
             Far away from your loved ones? No worries. Now you can watch
@@ -50,4 +57,4 @@ const Store = () => {
   );
 };
 
-export default Store;
+export default Services;

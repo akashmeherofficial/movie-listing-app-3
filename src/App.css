@@ -83,6 +83,17 @@ input:hover {
   justify-content: center;
  
 }
+.join-now{
+  letter-spacing: 0.1em;
+  margin-left: 2em;
+  padding:0.4em 0.8em;
+  font-size: 1.4em;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,#2C5364,#0F2027);
+}
 
 
 .items-btn{
@@ -191,6 +202,7 @@ iframe{
   width: 15em;
   cursor: pointer;
   background-color: #0F2027;
+  
 }
 .items h2{
   font-size: 1.2em;
@@ -210,11 +222,19 @@ iframe{
   transition: 3s;
 }
 .items:hover{
-  border-left:1em solid  #2c5364;
+
   border-radius: 5em ;
   background-color:#203A43 ;
   color: white;
   transition: 1s;
+  transform: scale(1.2);
+  z-index: 1;
+}
+.items i{
+  font-size: 2em;
+}
+.items i:hover{
+  color: #2C5364;
 }
 
 
@@ -256,7 +276,7 @@ iframe{
 }
 
 .nav {
-  max-width: ;
+  /* max-width: ; */
   padding:0 0.8em ;
  margin: 0;
   display: grid;
@@ -269,8 +289,16 @@ iframe{
   grid-template-columns: repeat(40, 1fr);
   gap:1rem;
   margin: 0;
+  height: 80vh;
   
   
+}
+.card:hover{
+  transform: scale(0.8);
+  z-index: 1;
+  height: auto;
+  transition: 0.8s;
+ cursor: pointer;
 }
 
 .navigation ul{
@@ -303,6 +331,7 @@ iframe{
   display: flex;
   flex-direction: row;
   margin: 0;
+  height: 80vh;
 }
 
 .left-lp h2{
@@ -369,16 +398,7 @@ iframe{
   
 }
 
-.left-lp button{
-  letter-spacing: 0.1em;
-  margin-left: 2em;
-  padding:0.2em 0.4em;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  font-weight: bold;
-  background-image: linear-gradient(to right,#2C5364,#0F2027);
-}
+
 
 button:hover{
   letter-spacing: 0.2em !important;
@@ -442,6 +462,7 @@ button:hover{
   margin: 0;
 }
 .header {
+
   margin: 0 2em;
   padding: 0.8em 4em;
   font-weight: bold;
@@ -452,11 +473,8 @@ button:hover{
 
 }
 .login-header {
-  
-  padding:2em ;
  margin:  0 0 2em 0;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 6fr 1fr; */
+
   background-image: linear-gradient(to top right,black,#141414,#0F2027,#203A43 );
 
   padding: auto;
@@ -464,16 +482,7 @@ button:hover{
   box-shadow: 1px 1px 6px 6px #203A43;
   border: 2px solid #2C5364;
 }
-.login-header h1{
-  font-size: 2em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.login-header h1:hover{
-  color: #f8b500;
-  letter-spacing: 0.2em;
-  transition: 1s;
-  cursor: pointer;
-}
+
 
 .title {
   color: #f8b500;
@@ -485,8 +494,10 @@ button:hover{
   margin: 0.2em 2em;
   text-align: center;
   letter-spacing: 0.2em;
-  font-weight:bolder;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: fantasy;
+  letter-spacing: 0.3em;
 }
 .heading:hover{
   color:#f8b500 ;
@@ -495,7 +506,7 @@ button:hover{
   letter-spacing: 0.4em;
 }
 .nav-main{
-  margin: 1em 0 0 0;
+  margin: 0em 0 0 0;
 }
 
 #search-input{
@@ -556,7 +567,7 @@ button:hover{
   margin: 0;
 }
 .footer-heading{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:fantasy;
   margin: 0;
   font-size: 2em;
   color:white;
@@ -702,7 +713,13 @@ font-size: 1.2em;
     overflow-x: hidden;
     
   }
- 
+  
+  .container-lp{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: auto;
+  }
 
 
   

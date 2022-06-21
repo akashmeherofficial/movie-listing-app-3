@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import SearchBox from "./SearchBox";
 import { ThemeContext } from "./context/ThemeContext";
 import Username from "./Username";
+import Header from "./Header";
 
 export default function Navbar() {
   const { theme } = useContext(ThemeContext);
@@ -10,10 +11,8 @@ export default function Navbar() {
       <nav className="nav" style={{ backgroundColor: `${theme}` }}>
         <Username />
         <div className="nav-main">
-          <div className="header">
-            <h1 className="heading">BINGE H'IT</h1>
-            <h4 className="tag">Best Binge Buddy</h4>
-          </div>
+          <Header />
+
           <div className="navigation">
             <ul>
               <li>

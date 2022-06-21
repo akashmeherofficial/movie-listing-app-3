@@ -5,8 +5,8 @@ import { ThemeContext } from "./context/ThemeContext";
 
 import React, { useState } from "react";
 import LandingPage from "./LandingPage";
-import TrendingPage from "../TrendingPage";
-import Store from "./Store";
+import TrendingPage from "./TrendingPage";
+import Services from "./Services";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -18,7 +18,7 @@ function Home() {
         <Navbar />
         <LandingPage />
         <TrendingPage />
-        <Store />
+        <Services />
         <Contact />
         <Footer />
       </ThemeContext.Provider>

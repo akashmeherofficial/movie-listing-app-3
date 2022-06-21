@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LoginContext } from "./context/LoginContext";
 import { ThemeContext } from "./context/ThemeContext";
+import Header from "./Header";
 
 function Login() {
   const { updateLogin, setUsername } = useContext(LoginContext);
@@ -8,9 +9,7 @@ function Login() {
   return (
     <div className="login" style={{ backgroundColor: `${theme}` }}>
       <div className="login-header">
-        <h1>BINGE HI'T</h1>
-
-        <h4 className="tag">Best Binge Buddy</h4>
+        <Header />
       </div>
       <h1>Username</h1>
       <input

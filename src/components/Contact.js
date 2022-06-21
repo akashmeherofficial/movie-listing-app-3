@@ -27,10 +27,8 @@ const Contact = () => {
           />
         </div>
         <div className="c-right">
-          <h1>Add Your Contribuition</h1>
-          <h4>
-            <i>(& get a chance to be published)</i>
-          </h4>
+          <h1>Get in Touch</h1>
+
           <form action="/" className="form">
             <TextField
               id="outlined-basic name"
@@ -47,31 +45,23 @@ const Contact = () => {
               label="  Show's Name"
               variant="outlined"
             />
+            <p>Gender</p>
+            <ToggleButtonGroup
+              color="primary"
+              value={alignment}
+              exclusive
+              onChange={handleChange}
+            >
+              <ToggleButton value="Male">Male</ToggleButton>
+              <ToggleButton value="Female">Female</ToggleButton>
+              <ToggleButton value="Other">Other</ToggleButton>
+            </ToggleButtonGroup>
             <TextField
               id="outlined-textarea"
-              label="Add your Review"
-              placeholder="Add Review"
+              label=""
+              placeholder="Comments"
               multiline
             />
-            {/* <p>Rating</p> */}
-            {/* <div className="rate">
-              <Stack spacing={1} id="rating">
-                <Rating name="half-rating" defaultValue={2.5} precision={1} />
-              </Stack>
-            </div> */}
-            <div className="gender">
-              <p>Gender</p>
-              <ToggleButtonGroup
-                color="primary"
-                value={alignment}
-                exclusive
-                onChange={handleChange}
-              >
-                <ToggleButton value="Male">Male</ToggleButton>
-                <ToggleButton value="Female">Female</ToggleButton>
-                <ToggleButton value="Other">Other</ToggleButton>
-              </ToggleButtonGroup>
-            </div>
             <button className="submit-btn">Submit</button>
           </form>
         </div>
